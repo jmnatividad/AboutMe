@@ -66,18 +66,41 @@ body{
 /* Introduction section */
 .Text-cmd{
     color: #70e000;
-    font-size: 50px;
+    font-size: 35px;
     font-weight: lighter;
+    margin-left: 100px;
+    
+    overflow: hidden; /* Hide overflowing text */
+    white-space: nowrap; /* Prevent text from wrapping */
+    
 }
 
 .intro-item{
     list-style-type: none;
 }
-.Text-cmd{
-    margin-left: 100px;
-}
 
+.intro-item li{
+    overflow: hidden; /* Hide overflowing text */
+    border-right: 2px solid #70e000;
+    animation: 
+        typing 4s steps(28),
+        cursor .2s infinite alternate;
 
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes cursor {
+    100% {
+      border-color: transparent;
+    }
+    
+  }
 /* About section */
 .about-item{
     color: white;
