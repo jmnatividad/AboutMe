@@ -14,7 +14,7 @@ body{
 }
 .navbar{
     display: flex;
-    background-color: aqua;
+    background-color: whitesmoke;
     height: 5vh;
     border-right: 5px solid;
 }
