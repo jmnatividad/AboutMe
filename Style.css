@@ -8,16 +8,51 @@ body{
     background-image: linear-gradient(to bottom, #000, #52796F);
     overflow: hidden;
 }
+
+/* Container */
 .container{
-    padding: 3rem;
-    display: inline-block;
+    align-items: start; 
+}
+.Introduction{
+    display: flex;
+    
+    /* divider */
+    border-bottom: 5px solid;   
+    border-top: 5px solid;
+    border-color: red;
 }
 .navbar{
-    display: flex;
+    margin: 40px;
     background-color: whitesmoke;
     height: 5vh;
-    border-right: 5px solid;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between; /* Distributes content evenly along the main axis (horizontally) */
+    align-items: center; /* Vertically center-align content */
+    padding: 5; /* Add padding for spacing */
+    /* divider */
+
 }
+/* endContainer */
+
+/* the icons for the socials */
 .navbar-item{
-    display:inline-flex ;
+    width:30%;
+    display: inline-flex;
+    list-style-type: none;
 }
+
+.icons{
+    width:40%;
+    height: auto;
+
+}
+/* end of icons socials */
+/*  */
+.Text-cmd{
+    color: #70e000;
+    
+}
+/* .Sample-Img{
+    background-color: aqua;
+} */
