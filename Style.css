@@ -9,6 +9,15 @@ body{
     overflow: hidden;
 }
 .container{
-    padding: 5rem;
+    padding: 3rem;
     display: inline-block;
+}
+.navbar{
+    display: flex;
+    background-color: aqua;
+    height: 5vh;
+    border-right: 5px solid;
+}
+.navbar-item{
+    display:inline-flex ;
 }
