@@ -6,20 +6,12 @@
 body{
     min-height: 100vh;
     background-image: linear-gradient(to bottom, #000, #52796F);
-    overflow: hidden;
+    overflow: auto;
 }
 
 /* Container */
 .container{
     align-items: start; 
-}
-.Introduction{
-    display: flex;
-    
-    /* divider */
-    border-bottom: 5px solid;   
-    border-top: 5px solid;
-    border-color: red;
 }
 .navbar{
     margin: 40px;
@@ -29,30 +21,74 @@ body{
     display: flex;
     justify-content: space-between; /* Distributes content evenly along the main axis (horizontally) */
     align-items: center; /* Vertically center-align content */
-    padding: 5; /* Add padding for spacing */
     /* divider */
 
 }
+.Introduction{
+    display: flex;
+    justify-content: space-between; /* Distributes content evenly along the main axis (horizontally) */
+    align-items: center; /* Vertically center-align content */
+    margin-left: 40px;
+    margin-right: 40px;
+    /* divider */
+    border-bottom: 5px solid;   
+    border-top: 5px solid;
+    border-color: red;
+}
+.About-Me{
+    display: flex;
+    justify-content: space-between; /* Distributes content evenly along the main axis (horizontally) */
+    align-items: center; /* Vertically center-align content */
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+    /* divider */
+    border-bottom: 5px solid;   
+    border-color: red;
+    opacity: 0;
+}
+
 /* endContainer */
 
-/* the icons for the socials */
+/* Navbar section */
 .navbar-item{
     width:30%;
     display: inline-flex;
     list-style-type: none;
 }
-
 .icons{
     width:40%;
     height: auto;
 
 }
-/* end of icons socials */
-/*  */
+
+/* Introduction section */
 .Text-cmd{
     color: #70e000;
-    
+    font-size: 50px;
+    font-weight: lighter;
 }
-/* .Sample-Img{
-    background-color: aqua;
-} */
+
+.intro-item{
+    list-style-type: none;
+}
+.Text-cmd{
+    margin-left: 100px;
+}
+
+
+/* About section */
+.about-item{
+    color: white;
+    font-size: 50px;
+    font-weight: lighter;
+}
+.text-about{
+    margin-left: 100px;
+}
+
+.Sample-Img{
+    margin-right: 100px;
+}
+
