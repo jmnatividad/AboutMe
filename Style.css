@@ -4,50 +4,11 @@
     font-family: 'Courier New', Courier, monospace;
 }
 body{
-    
     min-height: 100vh;
     background-image: linear-gradient(to bottom, #000, #52796F);
     overflow: hidden;
 }
 .container{
     padding: 5rem;
-    display: flexbox;
-}
-.wrapper{
     display: inline-block;
-}
-.socials{
-    display: inline-flex;
-}
-
-
-.name, .static-txt,.anim-txt{
-    color: #70e000;
-    letter-spacing: 10px;
-    border-right: 5px solid;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: 
-        typing 2s, 
-        cursor .4s step-end infinite alternate;
-}
-.name{
-    font-size: 40px;
-}
-.static-txt{
-    animation-delay: 2s;
-}
-.anim-txt{
-    animation-delay: 4s;
-}
-@keyframes cursor {
-    50%{
-        border-color: transparent;
-    }
-}
-@keyframes typing {
-    from{
-        width: 0;
-    }
 }
