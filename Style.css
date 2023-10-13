@@ -65,14 +65,17 @@ body{
 
 /* Introduction section */
 .Text-cmd{
+    height: 50vh;
     color: #70e000;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: lighter;
     margin-left: 100px;
     
     overflow: hidden; /* Hide overflowing text */
     white-space: nowrap; /* Prevent text from wrapping */
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .intro-item{
@@ -112,8 +115,27 @@ body{
 }
 
 .Sample-Img{
-    width: 40%;
-    margin-right: 100px;
+    width: 50%;
+}
+.Sample-Img ul{
+    list-style: none;
+}
+.img1,.img2,.img3{
+    width: 20%;
+    top: 200px;
+    position: absolute;
+}
+.img1{
+    /* transform: rotate(-15deg); */
+    margin: 0;
+}
+.img2{
+    margin-left: 100px;
+    /* right: 380px; */
+}
+.img3{
+    /* right: 20px; */
+    /* transform: rotate(15deg); */
 }
 
 
