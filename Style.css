@@ -2,12 +2,13 @@
     margin: 0;
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
 }
 body{
     min-height: 100vh;
     /* background-image: linear-gradient(to bottom, #000, #52796F); */
     background-image: linear-gradient(to bottom, #1a1b1b, #1b2220);
-
+    flex-direction: column;
     overflow: auto;
 }
 
@@ -28,21 +29,20 @@ body{
 }
 .Introduction{
     display: flex;
-    justify-content: space-between; /* Distributes content evenly along the main axis (horizontally) */
-    align-items: center; /* Vertically center-align content */
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 100px;
+
 }
 .About-Me{
     display: flex;
-    width: 10%;
-    justify-content: space-between; /* Distributes content evenly along the main axis (horizontally) */
-    align-items: center; /* Vertically center-align content */
-    margin-top: 50px;
-    margin-left: 40px;
-    margin-right: 40px;
-
+    justify-content: space-between; 
+    align-items: center;
+    margin-top: 100px;
+    padding: 100px;
     /* divider */
-    border-bottom: 5px solid;   
-    border-color: red;
+    border-top: 5px solid red; 
+    border-bottom: 5px solid red;   
 }
 
 /* endContainer */
@@ -82,10 +82,15 @@ body{
     position: relative;
 }
 
+.typing-text1 {
+    font-size: 35px;
+    font-weight: bold;
+}
 .typing-text1::after {
     position: absolute;
     height: 100%;
     width: 100%;
+
     content: "";
     background:#1a1b1b;
     left: 0;
@@ -190,12 +195,16 @@ body{
 
 /* About section */
 .about-item{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 100px;
+}
+
+.text-about{
     color: white;
     font-size: 50px;
     font-weight: lighter;
-}
-.text-about{
-    margin-left: 100px;
 }
 
 .Sample-Img{
