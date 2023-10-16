@@ -30,10 +30,6 @@ body{
     align-items: center; /* Vertically center-align content */
     margin-left: 40px;
     margin-right: 40px;
-    /* divider */
-    border-bottom: 5px solid;   
-    border-top: 5px solid;
-    border-color: red;
 }
 .About-Me{
     display: flex;
@@ -71,38 +67,29 @@ body{
     font-weight: lighter;
     margin-left: 30px;
     
-    overflow: hidden; /* Hide overflowing text */
-    white-space: nowrap; /* Prevent text from wrapping */
-    display: flex;
+    overflow: hidden; 
+    white-space: nowrap; 
+    display: inline-flex;
     justify-content: center;
     align-items: center;
 }
 
-.intro-item{
+.intro-item li{
     list-style-type: none;
+    position: relative;    
+}
+.intro-item li span::after{ 
+    content: "";
+    left: 0;
+    border-left: 2px solid #70e000;
 }
 
-.intro-item li{
-    overflow: hidden; /* Hide overflowing text */
-    border-right: 2px solid #70e000;
-    animation: 
-        typing 4s steps(28),
-        cursor .4s infinite alternate;
 
-  }
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
+  
   @keyframes cursor {
-    100% {
+    50% {
       border-color: transparent;
     }
-    
   }
 /* About section */
 .about-item{
