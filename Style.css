@@ -12,6 +12,7 @@ body{
     overflow-x: hidden;
 }
 
+
 /* Container */
 .container{
     align-items: start; 
@@ -39,7 +40,6 @@ body{
     justify-content: space-between; 
     align-items: center;
     padding: 100px;
-    
     /* divider */
     border-top: 5px solid red; 
     border-bottom: 5px solid red;   
@@ -47,7 +47,9 @@ body{
 .boxhide{
     filter: blur(5px);
     transform: translateX(100%);
-    transition: transform .8s ease;
+    transition: 
+    transform .8s ease,
+    filter 1.2s ease ;
 }
 
 .boxhide.show{
@@ -69,9 +71,31 @@ body{
     list-style-type: none;
 }
 .icons{
+
     width:40%;
     height: auto;
+}
+.Text1{
+    display: flex;
+    width: 50%;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: start;
+    align-items: center;
+    padding-left: 35px;
+}
 
+.Text2 a{
+    display: flex;
+    width:20%;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    white-space: nowrap; 
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Introduction section */
