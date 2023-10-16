@@ -82,9 +82,19 @@ body{
     content: "";
     left: 0;
     border-left: 2px solid #70e000;
+    animation: 
+    typing 4s steps(30) infinite,
+    cursor .4s alternate infinite;
 }
 
-
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
   
   @keyframes cursor {
     50% {
