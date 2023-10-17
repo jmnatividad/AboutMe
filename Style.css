@@ -44,14 +44,16 @@ html{
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    padding: 100px;
-    /* divider */
-    border-top: 5px solid red; 
-    border-bottom: 5px solid red;   
+    padding: 100px; 
+}
+.box{
+    display: inline-flex;
+    justify-content: center; 
+    align-items: center;
 }
 .boxhide{
-    /* filter: blur(5px); */
-    transform: translateX(100%);
+    filter: blur(5px);
+    transform: translateX(300%);
     transition: 
     transform .8s ease,
     filter 1.2s ease ;
@@ -254,13 +256,22 @@ html{
     margin-top: 100px;
 }
 .date{
-    filter: blur(0);
     color: #70e000;
     font-size: 100px;
     font-style: bold; 
-    transform: translateX(-480%) translateY(-200%);
     position: absolute;
+    transform: 
+        translateX(300%) 
+        translateY(-200%)
+        scale(30%);
+    transition: 
+    transform .8s ease;
+    
 }
+.date.dateshow{
+    transform: translateX(300%) translateY(-300%) scale(100%);
+}
+
 .text-about{
     color: white;
     font-size: 50px;
