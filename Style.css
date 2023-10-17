@@ -4,12 +4,16 @@
     font-family: 'Courier New', Courier, monospace;
     box-sizing: border-box;
 }
+
 body{
     min-height: 100vh;
     /* background-image: linear-gradient(to bottom, #000, #52796F); */
     background-image: linear-gradient(to bottom, #1a1b1b, #1b2220);
     flex-direction: column;
     overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
 }
 
 
@@ -32,8 +36,8 @@ body{
     display: flex;
     justify-content: space-between; 
     align-items: center; 
-    margin-top: 100px;
-
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 .About-Me{
     display: flex;
@@ -233,13 +237,28 @@ body{
 
 
 /* About section */
+.TextA{
+    display: flex;
+    color: whitesmoke;
+    font-size: 100px;
+    font-style: italic;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+}
 .about-item{
     display: flex;
     justify-content: space-between; 
     align-items: center; 
     margin-top: 100px;
 }
-
+.About-Me .date{
+    color: #70e000;
+    font-size: 100px;
+    font-style: bold; 
+    transform: translateX(-480%) translateY(-200%);
+    position: absolute;
+}
 .text-about{
     color: white;
     font-size: 50px;
@@ -255,7 +274,7 @@ body{
 }
 .img1,.img3{
     width: 18%;
-    top: 220px;
+    top: 320px;
     position: absolute;
 }
 .img1{
@@ -264,7 +283,7 @@ body{
     background-color: aqua;
 }
 .img2{
-    top: 180px;
+    top: 280px;
     margin-left: 250px;
     width: 18%;
     position: absolute;
