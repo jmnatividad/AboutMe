@@ -39,6 +39,7 @@ html{
     padding-top: 150px;
     padding-bottom: 150px;
 }
+
 .About-Me{
     display: flex;
     justify-content: space-between; 
@@ -49,7 +50,7 @@ html{
     border-bottom: 5px solid red;   
 }
 .boxhide{
-    filter: blur(5px);
+    /* filter: blur(5px); */
     transform: translateX(100%);
     transition: 
     transform .8s ease,
@@ -252,7 +253,8 @@ html{
     align-items: center; 
     margin-top: 100px;
 }
-.About-Me .date{
+.date{
+    filter: blur(0);
     color: #70e000;
     font-size: 100px;
     font-style: bold; 
