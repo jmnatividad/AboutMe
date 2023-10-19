@@ -45,6 +45,7 @@ window.addEventListener('scroll', function() {
 
     // Check if you've reached the bottom of the page
     if (scrollPosition + window.innerHeight >= documentHeight - threshold) {
+        this.alert(bottomScrolling.classList);
         bottomScrolling.classList.add('.hide-bottom-text');
     } else {
         bottomScrolling.classList.remove('.hide-bottom-text');
