@@ -3,7 +3,7 @@ const dates = document.querySelectorAll('.date');
 window.addEventListener('scroll',checkBoxes);
 
  function checkBoxes(){
-    const triggerBottom = window.innerHeight / 5 * 2.5;
+    const triggerBottom = window.innerHeight / 5 * 4;
 
     boxes.forEach(boxhide => {
         const boxTop = boxhide.getBoundingClientRect().top;

@@ -4,16 +4,16 @@
     font-family: 'Courier New', Courier, monospace;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     min-height: 100vh;
     /* background-image: linear-gradient(to bottom, #000, #52796F); */
-    background-image: linear-gradient(to bottom, #1a1b1b, #1b2220);
+    background-image: linear-gradient(to bottom, #1a1b1b, #000000);
     flex-direction: column;
     overflow-x: hidden;
-}
-html{
-    scroll-behavior: smooth;
 }
 
 
@@ -47,8 +47,9 @@ html{
     padding: 100px; 
 }
 .box{
+    width: 100%;
     display: inline-flex;
-    justify-content: center; 
+    justify-content: space-between; 
     align-items: center;
 }
 .boxhide{
@@ -249,12 +250,7 @@ html{
     justify-content: center;
     align-items: center;
 }
-.about-item{
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    margin-top: 100px;
-}
+
 .date{
     color: #70e000;
     font-size: 100px;
@@ -271,10 +267,16 @@ html{
 .date.dateshow{
     transform: translateX(300%) translateY(-300%) scale(100%);
 }
-
+.about-item{
+    display: inline-block;
+    width: 45%;
+    margin-top: 100px;
+}
 .text-about{
+    display: grid;
+    text-wrap: wrap;
     color: white;
-    font-size: 50px;
+    font-size: 25px;
     font-weight: lighter;
 }
 
