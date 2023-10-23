@@ -1,6 +1,5 @@
 const boxes = document.querySelectorAll('.boxhide');
 const dates = document.querySelectorAll('.date');
-const bottomScrolling = document.querySelectorAll('.bottom-scrolling');
 
 window.addEventListener('scroll', checkBoxes);
 
@@ -43,14 +42,20 @@ window.addEventListener('scroll', function() {
     // Calculate a threshold (e.g., 10 pixels from the bottom)
     const threshold = 10;
 
+    // Select elements with the class "bottom-scrolling"
+    const bottomScrolling = document.querySelectorAll('.bottom-scrolling');
+
     // Check if you've reached the bottom of the page
     if (scrollPosition + window.innerHeight >= documentHeight - threshold) {
-        this.alert(bottomScrolling.classList);
-        bottomScrolling.classList.add('.hide-bottom-text');
+        bottomScrolling.forEach(bottomtxt => {
+            bottomtxt.classList.add('hideText'); // Corrected class name
+        });
     } else {
-        bottomScrolling.classList.remove('.hide-bottom-text');
-
+        bottomScrolling.forEach(bottomtxt => {
+            bottomtxt.classList.remove('hideText'); // Corrected class name
+        });
     }
 });
+
 
 

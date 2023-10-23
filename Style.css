@@ -39,11 +39,27 @@ body{
     width: 100%;
     color: white;
     text-align: center;
+    justify-content: space-between;
     padding: 40px;
+    transform: translateY(0);
+    filter: opacity(100%);
+    transition: 
+    filter 0.8s ease,
+    transform 0.8s ease;
 }
-.bottom-scrolling.hide-bottom-text{
-    opacity: 0;
+
+.bottom-scrolling.hideText {
+    color: red;
+    filter: opacity(0%);
+    transform: translateY(100%);
 }
+.Bottom-content{
+    display: flex;
+    width: 10%;
+    height: 10%;
+}
+
+
 .Introduction{
     display: flex;
     justify-content: space-between; 
@@ -151,7 +167,7 @@ body{
     width: 100%;
 
     content: "";
-    background:#1a1b1b;
+    background:#171818;
     left: 0;
     border-left: 2px solid #70e000;
     animation: typing 2.5s steps(30, end) forwards, cursor .4s alternate infinite;
@@ -161,7 +177,7 @@ body{
     height: 100%;
     width: 100%;
     content: "";
-    background:#1a1b1b;
+    background:#171818;
     left: 0;
     border-left: 2px solid #1a1b1b;
     animation: typing 2.5s steps(30, end) forwards, cursor .4s  alternate infinite;
@@ -173,7 +189,7 @@ body{
     height: 100%;
     width: 100%;
     content: "";
-    background:#1a1b1b;
+    background:#171818;
     left: 0;
     border-left: 2px solid #1a1b1b;
     animation: typing 1s steps(8, end) forwards, cursor .4s alternate infinite;
@@ -184,7 +200,7 @@ body{
     height: 100%;
     width: 100%;
     content: "";
-    background:#1a1b1b;
+    background:#171818;
     left: 0;
     border-left: 2px solid #1a1b1b;
     animation: typing 1s steps(6, end) forwards, cursor .4s alternate infinite;
@@ -195,7 +211,7 @@ body{
     height: 100%;
     width: 100%;
     content: "";
-    background:#1a1b1b;
+    background:#171818;
     left: 0;
     border-left: 2px solid #1a1b1b;
     animation: typing 1s steps(12, end) forwards, cursor .4s alternate infinite;
@@ -206,7 +222,7 @@ body{
     height: 100%;
     width: 100%;
     content: "";
-    background:#1a1b1b;
+    background:#171818;
     left: 0;
     border-left: 2px solid #1a1b1b;;
     animation: typing 1s steps(12, end) forwards, cursor .4s alternate infinite;
@@ -217,7 +233,7 @@ body{
     height: 100%;
     width: 100%;
     content: "";
-    background:#1a1b1b;
+    background:#161616;
     left: 0;
     border-left: 2px solid #1a1b1b;
     animation:
