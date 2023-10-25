@@ -53,51 +53,40 @@
                 <div class="TextA">
                     <span>Projects</span>
                 </div>
-                <div class="About-Me">
-                    <span class="date" id="date"></span>
-                    <div class="box boxhide">
-                        <div class="about-item">
-                            <span class="text-about"><p id="Title"></p></span>
-                            <span class="text-about"><p id="Description"></p></span>
-                            <span class="text-about"><p id="Overview"></p></span>
-                        </div>
-                        <div class="About-image">
-                            <div><img src="" alt="" class="" id="image"></div>
-                        </div>
-                    </div>
-                </div>
+                <ul class="ul-about">
+                    <!-- here is where the about will be displayed -->
+                </ul>
+                <script>
+                    //puted here the code since it cant run with the app.js because this should be the first
+                    const ulAbout = document.querySelector('.ul-about')
+
+                    //for populating the ul of about me projects
+                    fetch('data.json')
+                            .then(response => response.json())
+                            .then(data => {
+                                data.forEach(entry => {
+                                    ulAbout.insertAdjacentHTML('beforeend', `
+                                    <li>
+                                        <div class="About-Me">
+                                            <span class="date" id="date">${entry.Date}</span>
+                                            <div class="box boxhide">
+                                                <div class="about-item">
+                                                    <span class="text-about"><p>${entry.Title}</p></span>
+                                                    <span class="text-about"><p>${entry.Description}</p></span>
+                                                    <span class="text-about"><p>${entry.Overview}</p></span>
+                                                </div>
+                                                <div class="About-image">
+                                                    <div><img src="${entry.image}" alt="" class="" id="image"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    `)
+                                });
+                            })
+                            .catch(error => console.error('Error loading JSON data:', error));
+                </script>
             </section>
-            
-            <!-- <script>
-                const jsonData = [
-                    {
-                        "Title": "Adventure of Anatoly Sokolov",
-                        "Date": "2019",
-                        "Description": "Adventure of Anatoly Sokolov is a 3d side scrolling game, it was developed using Unity 3D. Handled all the programming for the controls and events in the game. Assets are from a Unity assets store and are free.",
-                        "Overview": "Unity 3D game. PC game. 2019. C#, Unity Engine.",
-                        "image": "Img/FB.nng"
-                    },
-                    {
-                        "Title": "Operation Time",
-                        "Date": "2019",
-                        "Description": "Operation Time is another game I worked on. It is a 2D puzzle platformer created using the Godot Engine. I was responsible for game design, level design, and coding.",
-                        "Overview": "Godot Engine game. PC game. 2019. GDScript.",
-                        "image": "Img/OperationTime.png"
-                    },
-                    // Add more JSON data entries here
-                ];
-            
-                // Assuming you want to populate the HTML with data from the first entry in the JSON
-                const data = jsonData[0];
-            
-                // Populate the HTML elements with data
-                document.getElementById('date').textContent = data.Date;
-                document.getElementById('Title').textContent = data.Title;
-                document.getElementById('Description').textContent = data.Description;
-                document.getElementById('Overview').textContent = data.Overview;
-                document.getElementById('image').src = data.image;
-            </script> -->
-            
             <div class="bottom-scrolling">
                 <div>
                     <img src="Img/down-arrow.png" alt="" class="bottom-img">
