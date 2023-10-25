@@ -56,36 +56,6 @@
                 <ul class="ul-about">
                     <!-- here is where the about will be displayed -->
                 </ul>
-                <script>
-                    //puted here the code since it cant run with the app.js because this should be the first
-                    const ulAbout = document.querySelector('.ul-about')
-
-                    //for populating the ul of about me projects
-                    fetch('data.json')
-                            .then(response => response.json())
-                            .then(data => {
-                                data.forEach(entry => {
-                                    ulAbout.insertAdjacentHTML('beforeend', `
-                                    <li>
-                                        <div class="About-Me">
-                                            <span class="date" id="date">${entry.Date}</span>
-                                            <div class="box boxhide">
-                                                <div class="about-item">
-                                                    <span class="text-about"><p>${entry.Title}</p></span>
-                                                    <span class="text-about"><p>${entry.Description}</p></span>
-                                                    <span class="text-about"><p>${entry.Overview}</p></span>
-                                                </div>
-                                                <div class="About-image">
-                                                    <div><img src="${entry.image}" alt="" class="" id="image"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    `)
-                                });
-                            })
-                            .catch(error => console.error('Error loading JSON data:', error));
-                </script>
             </section>
             <div class="bottom-scrolling">
                 <div>

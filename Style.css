@@ -106,11 +106,7 @@ body{
     transform: translateX(0);
 }
 
-.About-image{
-    width: 52%;
-    justify-content: center; 
-    align-items: center;
-}
+
 /* endContainer */
 
 /* Navbar section */
@@ -313,17 +309,37 @@ body{
     width: 45%;
     margin-top: 100px;
 }
-.text-about{
+.text-about1,.text-about2,.text-about3{
     display: grid;
     text-wrap: wrap;
+    padding: 15px;
+}
+.text-about1{
+    color: #70e000;
+    font-size: 40px;
+    font-weight: bold;
+}
+.text-about2{
     color: white;
     font-size: 25px;
     font-weight: lighter;
+}
+.text-about3{
+    
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+}
+.About-image{
+    width: 52%;
+    justify-content: center; 
+    align-items: center;
 }
 
 .Sample-Img{
     width: 52%;
 }
+
 .Sample-Img ul{
     list-style: none;
 }
