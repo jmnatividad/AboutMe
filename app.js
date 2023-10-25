@@ -56,6 +56,12 @@ window.addEventListener('scroll', function() {
         });
     }
 });
+fetch('data.json')
+    .then(response => response.json())
+    .then(data => {
+        // Process the data
+    })
+    .catch(error => console.error('Error loading JSON data:', error));
 
 
 
