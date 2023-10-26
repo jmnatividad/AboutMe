@@ -68,6 +68,7 @@ data.forEach(entry => {
     `);
 });
 
+
 //after putting all  the li's run the animation and script for the respective events
 const boxes = document.querySelectorAll('.boxhide');
 const dates = document.querySelectorAll('.date');

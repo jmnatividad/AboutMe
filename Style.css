@@ -157,6 +157,38 @@ body{
     justify-content: start;
     align-items: center;
 }
+.alert-box {
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    background-color: yellow;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .alert-text {
+    position: relative;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    animation: slide 20s linear infinite; /* Adjusted animation duration to match the duplication */
+  }
+  
+  .alert-text span {
+    display: inline-block;
+    white-space: nowrap;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+
 
 .intro-item li{
     list-style-type: none;
