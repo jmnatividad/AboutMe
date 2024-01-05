@@ -145,6 +145,11 @@ window.addEventListener('scroll', function() {
     }
 });
 
+const windowWidth = window.innerWidth;
+
+// Log the window width
+console.log('Window width:', windowWidth);
+
 
 
 

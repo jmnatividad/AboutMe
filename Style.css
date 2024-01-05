@@ -7,9 +7,12 @@
 html{
     scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 
 body{
-    min-height: 100vh;
+    min-height: 110vh;
     /* background-image: linear-gradient(to bottom, #000, #52796F); */
     background-image: linear-gradient(to bottom, #1a1b1b, #000000);
     flex-direction: column;
@@ -19,7 +22,9 @@ body{
 
 /* Container */
 .container{
-    align-items: start; 
+    align-items: start;
+    width: 100vw; 
+    overflow: hidden;
 }
 .navbar{
     margin: 40px;
@@ -76,7 +81,8 @@ body{
 .Introduction{
     display: flex;
     justify-content: space-between; 
-    align-items: center; 
+    align-items: center;
+    height:500px;
     padding-top: 150px;
     padding-bottom: 150px;
 }
@@ -146,7 +152,7 @@ body{
 /* Introduction section */
 .Text-cmd{
     height: 50vh;
-    width: 40%;
+    width: 100;
     color: #70e000;
     font-size: 30px;
     font-weight: lighter;
@@ -315,6 +321,7 @@ body{
     color: whitesmoke;
     font-size: 100px;
     font-style: italic;
+    margin-top: 100px;
     padding: 40px;
     justify-content: center;
     align-items: center;
@@ -369,44 +376,15 @@ body{
 }
 
 .Sample-Img{
-    width: 52%;
+    width: 40%;
 }
 
-.Sample-Img ul{
-    list-style: none;
-}
-.img1,.img3{
-    width: 18%;
-    top: 320px;
-    position: absolute;
-}
+
 .img1{
-    /* margin: 0; */
-    background-color: aqua;
-    animation: slideside1 2s forwards;
-    transform: translateX(0);
-    transition: 
-        transform .8s ease;
+    width: auto;
+    transform: translateY();
+}
 
-}
-.img2{
-    top: 280px;
-    margin-left: 250px;
-    width: 18%;
-    position: absolute;
-    /* right: 380px; */
-    background-color: yellow;
-
-}
-.img3{
-    /* margin-left: 530px; */
-    /* right: 20px; */
-    background-color: red;
-    animation: slideside3 2s forwards;
-    transform: translateX(0);
-    transition: 
-        transform .8s ease,
-}
 @keyframes slideside1 {
     1%{
         transform: rotate(0);
