@@ -29,7 +29,7 @@ body{
 .navbar{
     margin: 40px;
     background-color: whitesmoke;
-    height: 5vh;
+    max-height: 5vh;
     border-radius: 5px;
     display: flex;
     justify-content: space-between; /* Distributes content evenly along the main axis (horizontally) */
@@ -80,7 +80,7 @@ body{
 
 .Introduction{
     display: flex;
-    justify-content: space-between; 
+    justify-content:center; 
     align-items: center;
     height:500px;
     padding-top: 150px;
@@ -88,10 +88,12 @@ body{
 }
 
 .About-Me{
-    display: flex;
-    justify-content: space-between; 
     align-items: center;
+    justify-content: center;
     padding: 100px; 
+}
+.box-img{
+    max-width: 95%;
 }
 .box{
     width: 100%;
@@ -109,7 +111,7 @@ body{
 
 .boxhide.show{
     filter: blur(0);
-    transform: translateX(0);
+    transform: translateX(0%);
 }
 
 
@@ -121,9 +123,9 @@ body{
     display: inline-flex;
     list-style-type: none;
 }
-.icons{
 
-    width:40%;
+.icons{
+    max-width:40%;
     height: auto;
 }
 .Text1{
@@ -152,7 +154,7 @@ body{
 /* Introduction section */
 .Text-cmd{
     height: 50vh;
-    width: 100;
+    max-width: 80%;
     color: #70e000;
     font-size: 30px;
     font-weight: lighter;
@@ -331,17 +333,14 @@ body{
     color: #70e000;
     font-size: 100px;
     font-style: bold; 
-    position: absolute;
+    text-align: center;
     transform: 
-        translateX(300%) 
-        translateY(-200%)
         scale(30%);
     transition: 
     transform .8s ease;
-    
 }
 .date.dateshow{
-    transform: translateX(300%) translateY(-300%) scale(100%);
+    transform: scale(100%);
 }
 .about-item{
     display: inline-block;
@@ -370,19 +369,21 @@ body{
     font-weight: lighter;
 }
 .About-image{
-    width: 52%;
+    width: 80%;
+    display: flex;
     justify-content: center; 
     align-items: center;
 }
 
 .Sample-Img{
-    width: 40%;
+    justify-content: center; 
+    align-items: center;
 }
 
 
-.img1{
-    width: auto;
-    transform: translateY();
+.ProfileImg{
+    max-width: 80%;
+    max-height: 80%;
 }
 
 @keyframes slideside1 {
