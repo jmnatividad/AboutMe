@@ -54,19 +54,16 @@ body {
 .Hidden {
     display: none;
 }
+.Container {
+    font-size: 36px;
+}
+
+.ButtonCollection {
+    flex-direction: row;
+}
 
 /* Floating text styles */
 
-/* Media query for larger screens */
-@media screen and (min-width: 600px) {
-    .Container {
-        font-size: 36px;
-    }
-
-    .ButtonCollection {
-        flex-direction: row;
-    }
-}
 
 
 .iloveyou {
