@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPY Valentines Day BABYYYY!</title>
+    <!-- Additional meta tags, stylesheets, or scripts can be included here -->
+    <link rel="stylesheet" href="../Styles.css">
+</head>
+<style>
+    
+</style>
+<body>
+    <div class="Container">
+        <div class="unclickable">
+            <iframe src="https://giphy.com/embed/vzvnFJV8a7zipTTuHf" width="350" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p>
+            <div>
+                HAPPY VALENTINES DAY BABYYY! PILI KA!!!!!! 
+            </div>
+        </div>
+        <div class="ButtonCollection">
+            <div class="AnnoyingButton" id="AnnoyingButton">
+                Bigyan kita 2000 Pesos
+            </div>
+            <div class="NormalButton" id="NormalButton">
+                Pag MAMAHL ko ok na baby! Iloveyou so much mwhaa!
+            </div>
+        </div>
+        <div class="Hidden" id="Jm">
+            <img  src="../JMMMm.jpg" width="400" height="800">
+            <div class="iloveyou">iloveyou with all my heart</div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("AnnoyingButton").addEventListener("click", function() {
+            // Get random position within viewport
+            var xPos = Math.random() * (window.innerWidth - 200); // Subtract button width
+            var yPos = Math.random() * (window.innerHeight - 50); // Subtract button height
+
+            // Set new position
+            this.style.position = "absolute";
+            this.style.left = xPos + "px";
+            this.style.top = yPos + "px";
+        });
+        document.getElementById("NormalButton").addEventListener("click", function() {
+                document.getElementById("Jm").classList.remove("Hidden");
+
+                // Hide unclickable and ButtonCollection elements
+                document.querySelector(".unclickable").classList.add("Hidden");
+                document.querySelector(".ButtonCollection").classList.add("Hidden");
+
+                // Resize the image to fit the screen
+                var image = document.querySelector(".unclickable iframe");
+                image.style.width = "100%";
+                image.style.height = "100vh"; // Adjust as needed
+
+                // Add click event listener to the resized image to restore the original state
+                image.addEventListener("click", function() {
+                    // Show unclickable and ButtonCollection elements
+                    document.querySelector(".unclickable").classList.remove("Hidden");
+                    document.querySelector(".ButtonCollection").classList.remove("Hidden");
+
+                    // Reset image size
+                    image.style.width = "480px";
+                    image.style.height = "480px"; // Adjust as needed
+
+                    // Hide iloveyou text and remove animation
+                    document.querySelector(".iloveyou").classList.add("Hidden");
+                });
+
+                // Trigger iloveyou animation
+                var iloveyouText = document.querySelector(".iloveyou");
+                iloveyouText.classList.remove("Hidden");
+                iloveyouText.classList.add("animate");
+            });
+});
+        
+    </script>
+</body>
+</html>
