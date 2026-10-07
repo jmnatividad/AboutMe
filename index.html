@@ -1,60 +1,181 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>About ME Collection Website</title>
-        <link rel="stylesheet" href="Style.css">
-        <script defer src="app.js"></script>
-    </head>
-    <body>
-        <div class="container">
-            
-            <section id="navbar">
-                <div class="navbar">
-                    <span class="Text1">Welcome fellow Developer</span>
-                    <span class="Text2"><a href="#About" >Projects</a></span>
-                    <ul class="navbar-item">
-                        <li ><a href="https://www.linkedin.com/in/jeric-marx-nativida-jackbart" target="_blank"><img src="Img/LI.png" alt="" class="icons"></a></li>
-                        <li ><a href="https://github.com/jmnatividad" target="_blank"><img src="Img/GITHUB.png" alt="" class="icons"></a></li>
-                        <li ><a href="mailto:jericmarxnatividad@gmail.com" target="_blank"><img src="Img/EMAIL.png" alt="" class="icons"></a></li>
-                        <li ><a href="https://www.facebook.com/jm.natividad.184/" target="_blank"><img src="Img/FB.png" alt="" class="icons"></a></li>
-                        <li ><a href="https://jmnatividad.github.io/AboutMe/" target="_blank"><img src="Img/SHARE.png" alt="" class="icons"></a></li>
-                    </ul>
-                </div>
-            </section>
-            
-            <section id="Introduction">
-               
-                <div class="Introduction">
-                    <div class="Text-cmd">
-                        <ul class="intro-item">
-                            <li><span class="typing-text1">Hi I am Jeric Marx Natividad</span></li>
-                            <li><span class="typing-text2">A passionate Computer science graduate</span></li>
-                            <li><span class="typing-text3">I like:</span></li>
-                            <li><span class="typing-text4">Gaming</span></li>
-                            <li><span class="typing-text5">Programming</span></li>
-                            <li><span class="typing-text6">Developing </span></li>
-                            <li><span class="typing-text7">Exploring new technologies</span></li>
-                        </ul>
-                    </div> 
-                    <div class="Sample-Img">
-                        <div ><img src="Img/ProfilePic.png" alt="" class="ProfileImg"></div>
-                    </div>
-                </div>
-            </section>
-            <section id="About">
-                <div class="TextA">
-                    <span>Projects</span>
-                </div>
-                <ul class="ul-about">
-                    <!-- here is where the about will be displayed -->
-                </ul>
-            </section>
-            <div class="bottom-scrolling">
-                <div>
-                    <img src="Img/down-arrow.png" alt="" class="bottom-img">
-                </div>
-                <div class="Bottom-text">Scroll Down</div>
-            </div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Jeric Marx Natividad, a software developer focused on Laravel/PHP, full-stack web development, APIs, QA, automation, game development, and technical training.">
+  <title>About Jeric Marx Natividad | Software Developer</title>
+  <link rel="stylesheet" href="Style.css">
+  <script defer src="app.js"></script>
+</head>
+
+<body>
+  <!-- Site header and primary navigation -->
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Back to the top">
+      <span>JM</span>
+      <span class="brand-name">Jeric Marx Natividad</span>
+    </a>
+
+    <nav aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#approach">Approach</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="socials" aria-label="Social links">
+      <a href="https://github.com/jmnatividad" target="_blank" rel="noreferrer" aria-label="GitHub">
+        <img src="Img/GITHUB.png" alt="GitHub">
+      </a>
+      <a href="https://www.linkedin.com/in/jeric-marx-nativida-jackbart" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+        <img src="Img/LI.png" alt="LinkedIn">
+      </a>
+      <a href="mailto:jericmarxnatividad@gmail.com" aria-label="Email">
+        <img src="Img/EMAIL.png" alt="Email">
+      </a>
+    </div>
+  </header>
+
+  <!-- Desktop section tracker; hidden on smaller screens in CSS -->
+  <aside class="side-tracker" aria-label="Page sections">
+    <span class="tracker-title">ON THIS PAGE</span>
+    <a href="#about" data-track="about">About</a>
+    <a href="#work" data-track="work">Selected work</a>
+    <a href="#approach" data-track="approach">How I work</a>
+    <a href="#contact" data-track="contact">Next step</a>
+  </aside>
+
+  <main id="top">
+    <!-- Hero introduction -->
+    <section class="hero page-section" id="about">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> Software developer · Philippines</p>
+        <h1>I build practical software<br><em>for people and systems.</em></h1>
+        <p class="name-line">
+          <span class="name-prefix">I'm </span>
+          <span id="typed-name" aria-label="Jeric Marx Natividad"></span>
+          <span class="cursor" aria-hidden="true"></span>
+        </p>
+        <p class="hero-description">I work across backend systems, full-stack web applications, APIs, and quality assurance. My work is grounded in solving real requirements, integrating the moving parts, and leaving systems easier to understand and improve.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">See selected work <span>↗</span></a>
+          <a class="text-link" href="mailto:jericmarxnatividad@gmail.com">Let's talk <span>→</span></a>
         </div>
-    </body>
+      </div>
+
+      <aside class="hero-note" aria-label="Current focus">
+        <span class="note-label">CURRENT FOCUS</span>
+        <p>Full-stack development<br>APIs &amp; integrations<br>QA-minded delivery</p>
+        <span class="note-line"></span>
+        <p class="note-small">Build<br><span>→</span> Test<br><span>→</span> Verify</p>
+      </aside>
+    </section>
+
+    <!-- About and professional background -->
+    <section class="intro-grid page-section">
+      <p class="section-kicker">01 / About</p>
+      <div>
+        <h2>A developer who thinks beyond the code.</h2>
+        <p>I’m a software developer who enjoys building applications that are practical, reliable, and easy to maintain. Most of my experience has been with Laravel and PHP, JavaScript, databases, APIs, and modern frontend tools. I like understanding not just how something should look, but also how it works behind the scenes and how it should behave for the people using it.</p>
+        <p>Over the years, I’ve also worked with software testing, Docker, AI-assisted development, automation, Unity and C#, mobile applications, and technical training. Working across these areas has taught me to look at a feature from more than just the coding side — from understanding the requirement and building it, to testing it, fixing problems, and documenting how it works.</p>
+        <p>I’m always interested in learning new technologies and finding better ways to build software that solves real problems.</p>
+      </div>
+    </section>
+
+    <!-- Selected project work -->
+    <section class="work page-section" id="work">
+      <div class="section-heading">
+        <p class="section-kicker">02 / Work &amp; experience</p>
+        <p class="section-aside">Projects where I worked from requirements to tested software.</p>
+      </div>
+
+      <div class="project-category"><p class="section-kicker">Professional development</p><p class="category-note">Full-stack delivery, project changes, and QA.</p></div>
+      <div class="project-list">
+        <article class="project-card">
+          <div class="project-index">01</div>
+          <div class="project-body">
+            <p class="project-type">Full-stack platform</p>
+            <h3>VisitCamSur</h3>
+            <p>Worked across a production-oriented tourism and booking system, from customer-facing functionality and booking workflows to APIs, databases, payment-related integration, debugging, and QA.</p>
+            <p class="role-label">Full-Stack Developer / QA / Requirement &amp; Change Handling</p>
+            <div class="tags"><span>Laravel</span><span>Vue</span><span>REST APIs</span><span>Tailwind</span><span>Docker</span></div>
+          </div>
+          <div class="project-arrow">↗</div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-index">02</div>
+          <div class="project-body">
+            <p class="project-type">Backend &amp; integrations</p>
+            <h3>PEMS / Job Listing</h3>
+            <p>Full-stack development and QA work involving requested changes, feature implementation, bug fixing, and translating project requirements into workable technical updates.</p>
+            <p class="role-label">Full-Stack Developer / QA / Requirement &amp; Change Handling</p>
+            <div class="tags"><span>PHP</span><span>Laravel</span><span>Webhooks</span><span>QA</span></div>
+          </div>
+          <div class="project-arrow">↗</div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-index">03</div>
+          <div class="project-body">
+            <p class="project-type">Business / independent work</p>
+            <h3>NagaGo / NagaNow</h3>
+            <p>A Laravel, PHP, Vue, and MySQL prototype exploring local service discovery, business profiles, services, schedules, availability, appointments, and booking management.</p>
+            <p class="role-label">Full-Stack Developer / System &amp; Feature Development / QA</p>
+            <div class="tags"><span>Unity</span><span>C#</span><span>Physics</span><span>Prototyping</span></div>
+          </div>
+          <div class="project-arrow">↗</div>
+        </article>
+
+        <!-- Additional projects are revealed by the View more work button -->
+        <div class="more-projects" id="more-projects">
+          <article class="project-card">
+            <div class="project-index">04</div>
+            <div class="project-body"><p class="project-type">AI &amp; game development</p><h3>Chicken Crossing</h3><p>My own Unity/C# game-development prototype focused on gameplay implementation, debugging, testing, and iterative development.</p><p class="role-label">Game Developer</p><div class="tags"><span>Unity</span><span>C#</span><span>Prototype</span></div></div><div class="project-arrow">↗</div>
+          </article>
+          <article class="project-card">
+            <div class="project-index">05</div>
+            <div class="project-body"><p class="project-type">Technical documentation</p><h3>Generative AI in Game Development</h3><p>Technical documentation and competency-based learning material development related to AI-assisted programming, Unity/C# workflows, learning activities, and portfolio evidence.</p><p class="role-label">Technical Documentation &amp; Learning Material Development</p><div class="tags"><span>TESDA</span><span>AI-assisted development</span><span>Unity/C#</span></div></div><div class="project-arrow">↗</div>
+          </article>
+          <article class="project-card">
+            <div class="project-index">06</div>
+            <div class="project-body"><p class="project-type">Business / independent work</p><h3>Petal &amp; Grace / by Jeric Flower Shop</h3><p>An independent business and software project for a real flower-order workflow in Naga City, including bouquets, wreaths, pre-orders, customer coordination, delivery coordination, and payment options.</p><p class="role-label">Independent Developer / Business Owner</p><div class="tags"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>Business workflow</span></div></div><div class="project-arrow">↗</div>
+          </article>
+        </div>
+      </div>
+      <button class="more-button" type="button" aria-expanded="false" aria-controls="more-projects">View more work <span>↓</span></button>
+      <div class="experience-strip"><p class="section-kicker">What I bring to a project</p><p>Frontend and backend development · APIs and databases · booking and payment workflows · debugging and testing · translating requirements into maintainable changes</p></div>
+    </section>
+
+    <!-- Working process -->
+    <section class="approach page-section" id="approach">
+      <div class="section-heading"><p class="section-kicker">03 / How I work</p><p class="section-aside">A practical loop for making software better.</p></div>
+      <div class="approach-grid">
+        <div class="approach-step"><span>01</span><h3>Understand</h3><p>Start with the requirement, the existing system, and the people using it.</p></div>
+        <div class="approach-step"><span>02</span><h3>Build</h3><p>Shape a maintainable solution across frontend, backend, data, and integrations.</p></div>
+        <div class="approach-step"><span>03</span><h3>Verify</h3><p>Test realistic scenarios, investigate bugs, and check behavior in production.</p></div>
+        <div class="approach-step"><span>04</span><h3>Document</h3><p>Leave behind clear decisions, technical notes, and useful learning materials.</p></div>
+      </div>
+    </section>
+
+    <!-- Skills grouped by practical area -->
+    <section class="capabilities page-section">
+      <p class="section-kicker">04 / Capabilities</p>
+      <div class="capability-grid">
+        <div><h3>Software development</h3><p>Laravel · PHP · JavaScript · Vue · Svelte · Inertia · Tailwind · MySQL · SQLite</p></div>
+        <div><h3>Systems &amp; quality</h3><p>REST APIs · authentication · RBAC · webhooks · functional testing · UAT · Docker · Nginx · Redis</p></div>
+        <div><h3>Beyond the web</h3><p>AI-assisted development · n8n automation · React Native · Unity · C# · TESDA learning materials</p></div>
+      </div>
+    </section>
+
+    <!-- Contact and closing message -->
+    <section class="closing page-section" id="contact">
+      <p class="section-kicker">05 / Next step</p>
+      <h2>Have a system to build,<br><em>test, or improve?</em></h2>
+      <a class="contact-link" href="mailto:jericmarxnatividad@gmail.com">jericmarxnatividad@gmail.com <span>↗</span></a>
+      <div class="footer-row"><span>© 2026 Jeric Marx Natividad</span><span>Designed and built with HTML, CSS &amp; JavaScript.</span></div>
+    </section>
+  </main>
+</body>
 </html>
