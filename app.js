@@ -5,6 +5,9 @@ if(target){if(reduced){target.textContent=name}else{let i=0;const type=()=>{targ
 const moreButton=document.querySelector('.more-button');
 const moreProjects=document.querySelector('#more-projects');
 if(moreButton&&moreProjects){moreButton.addEventListener('click',()=>{const open=moreProjects.classList.toggle('is-open');moreButton.classList.toggle('is-open',open);moreButton.setAttribute('aria-expanded',String(open));moreButton.innerHTML=open?'Show less work <span>↑</span>':'View more work <span>↓</span>'})}
+const menuButton=document.querySelector('.menu-toggle');
+const siteHeader=document.querySelector('.site-header');
+if(menuButton&&siteHeader){const closeMenu=()=>{siteHeader.classList.remove('menu-open');menuButton.setAttribute('aria-expanded','false');menuButton.setAttribute('aria-label','Open navigation menu')};menuButton.addEventListener('click',()=>{const open=siteHeader.classList.toggle('menu-open');menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Close navigation menu':'Open navigation menu')});siteHeader.querySelectorAll('nav a').forEach(link=>link.addEventListener('click',closeMenu));document.addEventListener('keydown',event=>{if(event.key==='Escape')closeMenu()})}
 const trackedSections=['about','work','certifications','approach','contact'].map(id=>document.getElementById(id)).filter(Boolean);
 const trackerLinks=document.querySelectorAll('[data-track]');
 if(trackedSections.length&&trackerLinks.length){const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){trackerLinks.forEach(link=>link.classList.toggle('active',link.dataset.track===entry.target.id))}})},{rootMargin:'-35% 0px -55% 0px',threshold:0});trackedSections.forEach(section=>observer.observe(section))}
